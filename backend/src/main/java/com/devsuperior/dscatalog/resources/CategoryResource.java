@@ -48,7 +48,7 @@ public class CategoryResource {
 	
 	@PutMapping(value = "/{id}")
 	public ResponseEntity<CategoryDTO> insert(@PathVariable Long id, @RequestBody CategoryDTO dto){
-		dto = service.updade(id, dto);
+		dto = service.update(id, dto);
 		return ResponseEntity.ok().body(dto);
 	}
 	
